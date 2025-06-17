@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <title>Rashad Wajahat // flimcadet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon for browser tab -->
   <link rel="icon" type="image/svg+xml" href="/logo.svg">
-  <!-- JetBrains Mono font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <style>
     html, body {
@@ -30,13 +28,13 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: stretch;
-      justify-content: center; /* Center vertically */
+      justify-content: center;   /* vertical center */
+      align-items: flex-start;   /* left align */
     }
     .container {
       width: 100%;
       max-width: 540px;
-      margin-left: auto;
+      margin-left: 0; /* left align */
       margin-right: auto;
       display: flex;
       flex-direction: column;
@@ -150,7 +148,6 @@
       from { opacity: 0; }
       to   { opacity: 1; }
     }
-    /* Responsive Vimeo embed */
     .video-embed {
       width: 100%;
       max-width: 480px;
