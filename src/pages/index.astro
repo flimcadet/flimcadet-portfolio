@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <title>Rashad Wajahat // flimcadet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon for browser tab -->
   <link rel="icon" type="image/svg+xml" href="/logo.svg">
-  <!-- JetBrains Mono font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <style>
     html, body {
@@ -33,11 +31,11 @@
     .container {
       width: 100%;
       max-width: 540px;
-      margin: 48px auto 0 auto; /* top margin, horizontally centered */
+      margin: 48px auto 0 auto;
       display: flex;
       flex-direction: column;
       gap: 32px;
-      align-items: flex-start; /* left-align content inside */
+      align-items: flex-start;
     }
     .header {
       margin-bottom: 8px;
@@ -78,7 +76,7 @@
     }
     .contact {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 0;
       text-align: left;
       width: 100%;
     }
@@ -218,13 +216,10 @@
     // Dropdown functionality
     document.querySelectorAll('.dropdown').forEach(function(drop) {
       drop.addEventListener('click', function() {
-        // Get the parent <li>
         var li = drop.parentElement;
-        // Close others
         document.querySelectorAll('ul > li').forEach(function(otherLi) {
           if (otherLi !== li) otherLi.classList.remove('open');
         });
-        // Toggle this one
         li.classList.toggle('open');
       });
     });
