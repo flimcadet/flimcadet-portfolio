@@ -91,7 +91,7 @@
       transition: transform 0.2s;
       display: inline-block;
     }
-    .dropdown.open .arrow {
+    li.open .arrow {
       transform: rotate(90deg);
     }
     .dropdown-content {
@@ -104,7 +104,7 @@
       line-height: 1.5;
       max-width: 90%;
     }
-    .dropdown.open .dropdown-content {
+    li.open .dropdown-content {
       display: block;
       animation: fadeIn 0.2s;
     }
@@ -177,12 +177,14 @@
     // Dropdown functionality
     document.querySelectorAll('.dropdown').forEach(function(drop) {
       drop.addEventListener('click', function() {
+        // Get the parent <li>
+        var li = drop.parentElement;
         // Close others
-        document.querySelectorAll('.dropdown').forEach(function(other) {
-          if (other !== drop) other.classList.remove('open');
+        document.querySelectorAll('ul > li').forEach(function(otherLi) {
+          if (otherLi !== li) otherLi.classList.remove('open');
         });
         // Toggle this one
-        drop.classList.toggle('open');
+        li.classList.toggle('open');
       });
     });
   </script>
