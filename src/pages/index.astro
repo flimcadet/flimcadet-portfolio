@@ -1,50 +1,74 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
+// JetBrains Mono font from Google Fonts
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #e0e0e0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 700px;
+  margin: 80px auto 0 auto;
+  padding: 32px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 24px #0008;
+}
+h1, h2 {
+  color: #7afc7a;
+  font-weight: bold;
+  margin-top: 0;
+}
+a {
+  color: #7afc7a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.prompt {
+  color: #7afc7a;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.terminal-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 24px 4px;
+    padding: 12px;
+  }
+}
+</style>
+
+<div class="container">
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>hello, i'm flimcadet.</span>
+  </div>
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>welcome to my portfolio.</span>
+  </div>
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>contact: <a href="mailto:your@email.com">your@email.com</a></span>
+  </div>
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>github: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></span>
+  </div>
+  <!-- Add more lines as you wish -->
+</div>
