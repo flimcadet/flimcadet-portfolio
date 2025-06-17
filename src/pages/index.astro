@@ -112,6 +112,12 @@
       from { opacity: 0; }
       to   { opacity: 1; }
     }
+    /* Responsive Vimeo embed */
+    .video-embed {
+      width: 100%;
+      max-width: 480px;
+      margin: 18px 0 0 0;
+    }
     @media (max-width: 600px) {
       .container {
         max-width: 98vw;
@@ -119,6 +125,9 @@
       }
       body {
         padding: 24px 4px;
+      }
+      .video-embed {
+        max-width: 100vw;
       }
     }
   </style>
@@ -147,19 +156,26 @@
       <li>
         <div class="dropdown">
           <span class="arrow">&gt;</span>
-          short film
+          audiovisual performance (vj)
         </div>
         <div class="dropdown-content">
-          Narrative and experimental short films exploring memory, identity, and perception.
+          immersive audiovisual works combining sound, video, and generative visuals for live performance.
         </div>
       </li>
       <li>
         <div class="dropdown">
           <span class="arrow">&gt;</span>
-          audiovisual performance (vj)
+          short film
         </div>
         <div class="dropdown-content">
-          immersive audiovisual works combining sound, video, and generative visuals for live performance.
+          rashad served as executive producer on the award-winning horror short <strong>Moshari (2022)</strong>.<br><br>
+          <em>"Two sisters are forced inside a mosquito net (moshari) to survive — but can they survive each other?"</em>
+          <div class="video-embed">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/759653578?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MOSHARI"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
         </div>
       </li>
     </ul>
