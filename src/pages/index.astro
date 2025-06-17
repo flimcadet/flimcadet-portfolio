@@ -6,7 +6,7 @@
   <title>flimcadet // rashad wajahat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- JetBrains Mono font from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
@@ -16,6 +16,7 @@
       color: #fff;
       font-family: 'JetBrains Mono', monospace;
       font-size: 18px;
+      font-weight: 400;
       line-height: 1.6;
       min-height: 100vh;
     }
@@ -37,21 +38,27 @@
     .header {
       margin-bottom: 8px;
     }
-    .header-title {
-      font-size: 1.4em;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-    }
-    .header-roles {
+    .header-title,
+    .header-roles,
+    .contact,
+    .contact a,
+    ul,
+    li,
+    .arrow {
       font-size: 1em;
       font-weight: 400;
-      margin-top: 4px;
       color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .header-title {
+      /* Remove any extra styling, keep it same as rest */
+      margin-bottom: 0;
+    }
+    .header-roles {
+      margin-top: 4px;
     }
     .contact {
       margin-top: 8px;
-      font-size: 0.98em;
-      color: #fff;
     }
     .contact a {
       color: #fff;
@@ -68,12 +75,9 @@
     }
     li {
       margin-bottom: 6px;
-      font-size: 1em;
     }
     .arrow {
-      color: #fff;
       margin-right: 8px;
-      font-weight: 600;
     }
     @media (max-width: 600px) {
       .container {
