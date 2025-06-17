@@ -1,0 +1,73 @@
+
+// JetBrains Mono font from Google Fonts
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #e0e0e0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 700px;
+  margin: 80px auto 0 auto;
+  padding: 32px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 24px #0008;
+}
+h1, h2 {
+  color: #7afc7a;
+  font-weight: bold;
+  margin-top: 0;
+}
+a {
+  color: #7afc7a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.prompt {
+  color: #7afc7a;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.terminal-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 24px 4px;
+    padding: 12px;
+  }
+}
+</style>
+
+<div class="container">
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>hello, i'm flimcadet.</span>
+  </div>
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>welcome to my portfolio.</span>
+  </div>
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>contact: <a href="mailto:your@email.com">your@email.com</a></span>
+  </div>
+  <div class="terminal-line">
+    <span class="prompt">&gt;</span>
+    <span>github: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></span>
+  </div>
+  <!-- Add more lines as you wish -->
+</div>
