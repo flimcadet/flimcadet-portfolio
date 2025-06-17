@@ -1,65 +1,119 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-html, body {
-  background: #111;
-  color: #e0e0e0;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  max-width: 700px;
-  margin: 48px auto;
-  padding: 32px;
-}
-.section-title {
-  color: #7afc7a;
-  font-weight: bold;
-  margin-top: 32px;
-  margin-bottom: 8px;
-  font-size: 1.2em;
-  letter-spacing: 1px;
-}
-.terminal-line {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 8px;
-}
-.prompt {
-  color: #7afc7a;
-  margin-right: 8px;
-  font-weight: bold;
-}
-a {
-  color: #7afc7a;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-</style>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flimcadet // rashad wajahat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+    .container {
+      width: 100%;
+      max-width: 540px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .header {
+      margin-bottom: 8px;
+    }
+    .header-title {
+      font-size: 1.4em;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .header-roles {
+      font-size: 1em;
+      font-weight: 400;
+      margin-top: 4px;
+      color: #ccc;
+    }
+    .contact {
+      margin-top: 8px;
+      font-size: 0.98em;
+      color: #aaa;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    .contact a:hover {
+      color: #1da1f2;
+    }
+    .section {
+      margin-top: 24px;
+    }
+    .section-title {
+      font-size: 1.05em;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 6px;
+      font-size: 1em;
+    }
+    .arrow {
+      color: #fff;
+      margin-right: 8px;
+      font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .container {
+        max-width: 98vw;
+        padding: 0 2vw;
+      }
+      body {
+        padding: 24px 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-title">flimcadet // rashad wajahat</div>
+      <div class="header-roles">writer &nbsp;|&nbsp; filmmaker &nbsp;|&nbsp; audiovisual artist</div>
+      <div class="contact">
+        <div>email: <a href="mailto:rashad@flimcadet.com">rashad@flimcadet.com</a></div>
+        <div>instagram: <a href="https://instagram.com/flimcadet" target="_blank">@flimcadet</a></div>
+      </div>
+    </header>
 
-<div class="container">
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>hello, i'm flimcadet.</span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>sound and media artist, curator, researcher, writer.</span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>based in the netherlands.</span></div>
-
-  <div class="section-title">projects / curation</div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>rewire festival, nl (2024)</span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>whitechapel gallery, uk (2023)</span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>worm, nl (2023)</span></div>
-
-  <div class="section-title">performances</div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>the royal conservatory, nl (2023)</span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>traumburg festival, de (2022)</span></div>
-
-  <div class="section-title">education</div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>msc media technology, leiden university, nl</span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>electrical & electronic engineering, brac university, bd</span></div>
-
-  <div class="section-title">contact</div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>email: <a href="mailto:your@email.com">your@email.com</a></span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>github: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></span></div>
-  <div class="terminal-line"><span class="prompt">&gt;</span><span>phone: +31 (0) 6 84 81 61 56</span></div>
-</div>
+    <section class="section">
+      <div class="section-title">projects / curation</div>
+      <ul>
+        <li><span class="arrow">&gt;</span>HXTX</li>
+        <li><span class="arrow">&gt;</span>short film</li>
+        <li><span class="arrow">&gt;</span>audiovisual</li>
+        <li><span class="arrow">&gt;</span>vj</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
