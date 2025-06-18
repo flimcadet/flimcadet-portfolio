@@ -149,13 +149,38 @@
       max-width: 480px;
       margin: 18px 0 0 0;
     }
+    .yt-embed {
+      width: 100%;
+      max-width: 480px;
+      margin: 18px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .yt-embed iframe {
+      width: 100%;
+      height: 270px;
+      max-width: 100%;
+      border: none;
+    }
+    .yt-caption {
+      margin-top: 6px;
+      color: #aaa;
+      font-size: 0.97em;
+      font-style: italic;
+    }
     @media (max-width: 600px) {
       .container {
         max-width: 98vw;
         padding: 0 2vw;
       }
-      .video-embed {
+      .video-embed,
+      .yt-embed {
         max-width: 100vw;
+      }
+      .yt-embed iframe {
+        height: 40vw;
+        min-height: 180px;
       }
     }
   </style>
@@ -180,6 +205,10 @@
         <div class="dropdown-content">
           an electronic music festival outfit based in Cox's Bazar, Bangladesh co-founded in 2021 by Ishaq Sikder, Mridul Moinak and Rashad Wajahat to push the emergence of the electronic music scene in Bangladesh by curating eccentric and inclusive spaces where diverse communities come together to dance, absorb electronic music, explore individual self-expression, and discover collective liberation.  follow their events on instagram
           <a href="https://instagram.com/hxtch.me" target="_blank" style="color:#fff; text-decoration:underline;">@hxtch.me</a>.
+          <div class="yt-embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OezryXGBKWs?si=kHdQVcT5qjEf9ndY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="yt-caption"><em>edited by flimcadet</em></div>
+          </div>
         </div>
       </li>
       <li>
